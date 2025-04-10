@@ -1,3 +1,21 @@
+// import java.util.Scanner;
+
+// public class Alphabet {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter a chracter: ");
+//         char ch = sc.next().charAt(0);
+
+//         if((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')){
+//             System.out.println(ch + " is an alphabet.");
+//         }else {
+//             System.out.println(ch + " is not a an alphabet.");
+//         }
+//         sc.close();
+//         }
+// }
+
 import java.util.Scanner;
 
 public class Alphabet {
@@ -7,7 +25,7 @@ public class Alphabet {
         System.out.println("Enter a chracter: ");
         char ch = sc.next().charAt(0);
 
-        if((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')){
+        if(Character.isLetter(ch)){
             System.out.println(ch + " is an alphabet.");
         }else {
             System.out.println(ch + " is not a an alphabet.");
@@ -15,6 +33,7 @@ public class Alphabet {
         sc.close();
         }
 }
+
 
     
 
